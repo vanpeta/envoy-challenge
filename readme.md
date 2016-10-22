@@ -24,5 +24,9 @@ I started by running npm init inside the folder to create the package.json file,
 
 Gulp is next, this will automate tasks like compiling our SASS to CSS code so browser can interpret the stylesheets.
 
-Next is to create the Gulpfile.js file, we will add here the tasks to be automatize.
+Next is to create the Gulpfile.js file, we will add here the tasks to be automatize, define gulp and start writting the tasks.
+
+##### SASS
+
+Next we need to install SASS, and define it in our gulpfile.
 
