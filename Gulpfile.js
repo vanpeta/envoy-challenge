@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var bourbon = require("node-bourbon").includePaths;
 var neat = require("node-neat").includePaths;
+var browserSync = require("browser-sync");
 
 //Compiles all gulp tasks
 gulp.task('default', ['sass']);
@@ -19,4 +20,19 @@ gulp.task("sass", function() {
       .pipe(browserSync.reload({
         stream: true
       }))
+});
+
+// Spin up a server
+gulp.task("browserSync", function() {
+  browserSync({
+    server: {
+      baseDir: "dist"
+    }
+  })
+});
+
+// Live reload anytime a file changes
+gulp.task("watch", ["browserSync", "sass"], function() {
+  gulp.watch("src/scss/**/*.scss", ["sass"]);
+  gulp.watch("dist/*.html").on("change", browserSync.reload);
 });

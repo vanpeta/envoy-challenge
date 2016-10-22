@@ -1,4 +1,4 @@
-# How I create this project
+# How I created this project
 
 #### Creating the developing environment
 The directions state that I must use gulp, bourbon and neat, so here is a lost of libraries and frameworks we will be including:
@@ -34,5 +34,9 @@ Next we need to install SASS, define it in our gulpfile and added the task.
 
 Finally we install bourbon and neat to the project, define them on gulpfile.js and create the tasks.
 
- 
+##### BrowserSync
+
+Lastly we add BrowserSync.
+
+$ npm install browser-sync --save-dev 
 
