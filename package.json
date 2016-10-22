@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vanpeta/envoy-challenge/issues"
   },
-  "homepage": "https://github.com/vanpeta/envoy-challenge#readme"
+  "homepage": "https://github.com/vanpeta/envoy-challenge#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
