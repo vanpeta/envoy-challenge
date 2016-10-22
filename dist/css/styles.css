@@ -4,25 +4,104 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-* {
-  margin: 0; }
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
 
 body {
-  background: #1D1D1D;
   margin: 0px !important;
   padding: 0px !important; }
 
 nav {
-  background: #333333;
-  height: 60px; }
-
-li {
-  list-style-type: none;
-  color: #ffffff;
-  display: inline;
-  font-size: 13px;
-  font-family: "Arial"; }
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+  position: absolute;
+  width: 100%; }
+  nav .links {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Arial";
+    display: inline-block;
+    position: relative;
+    bottom: -20px;
+    margin-right: 25px; }
+  nav img {
+    height: 25px; }
 
 .featured {
-  background: #ffffff;
-  height: 600px; }
+  height: 600px;
+  background-image: url "assets/ENVOY_LOGO.png"; }
+
+.section2 {
+  background: #1D1D1D; }
+
+.nav-content {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.twitter {
+  height: 40px;
+  width: 161px;
+  background: #565656;
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  margin-right: -4px; }
+
+.twitter-logo {
+  margin-left: 21px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative; }
+
+.redbox {
+  width: 40px;
+  height: 40px;
+  background: #e34e33;
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  text-align: center; }
+
+.Tweet__Tweet_ {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #67d9da;
+  line-height: 3.692;
+  display: inline-block;
+  position: relative;
+  bottom: 2px; }
+
+.navbar-right {
+  display: inline-block;
+  float: right; }
+
+.plus {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold; }
+
+.container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }

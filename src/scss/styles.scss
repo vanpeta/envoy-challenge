@@ -2,26 +2,99 @@
 @import "grid-settings";
 @import "neat";
 
-*{
-    margin:0;
+@mixin nav-bar-valign {
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
 }
-body {
-  background: #1D1D1D;
-  margin: 0px!important;
-  padding: 0px!important
-}
-nav {
-  background: #333333;
-  height: 60px;
-}
-li {
-  list-style-type: none;
-  color: #ffffff;
-  display: inline;
+@mixin nav-bar-font {
   font-size: 13px;
-  font-family: "Arial";
+  font-weight: bold;
+  font-family: "Arial"
 }
+@mixin wrapper {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  margin: 0px!important;
+  padding: 0px!important;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.7);
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  .links{
+    text-decoration: none;
+    color: #ffffff;
+    @include nav-bar-font;
+    @include nav-bar-valign;
+    margin-right: 25px;
+  }
+  img {
+  height: 25px;
+  }
+}
+
 .featured {
-  background: #ffffff;
   height: 600px;
+  background-image: url ("assets/ENVOY_LOGO.png");
 }
+.section2{
+  background: #1D1D1D;
+}
+
+.nav-content {
+  @include wrapper;
+}
+.twitter {
+  height: 40px;
+  width: 161px;
+  background: #565656;
+  @include nav-bar-valign;
+  margin-right: -4px;
+}
+
+.twitter-logo {
+  margin-left: 21px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+.redbox {
+  width: 40px;
+  height: 40px;
+  background: #e34e33;
+  @include nav-bar-valign;
+  text-align: center;
+}
+.Tweet__Tweet_ {
+  @include nav-bar-font;
+  color: rgb(103, 217, 218);
+  line-height: 3.692;
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+}
+.navbar-right {
+  display: inline-block;
+  float: right;
+}
+.plus {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.container {
+  @include wrapper;
+  text-align: center;
+}
+
+
+
+
+
