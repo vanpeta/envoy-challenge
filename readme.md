@@ -28,5 +28,11 @@ Next is to create the Gulpfile.js file, we will add here the tasks to be automat
 
 ##### SASS
 
-Next we need to install SASS, and define it in our gulpfile.
+Next we need to install SASS, define it in our gulpfile and added the task.
+
+##### Bourbon & Neat
+
+Finally we install bourbon and neat to the project, define them on gulpfile.js and create the tasks.
+
+ 
 
