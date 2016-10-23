@@ -141,7 +141,6 @@ nav {
   transform: rotate(49deg);
 }
 .bottom-section {
-  height: 867px;
   background: #1D1D1D;
 }
 .paragraph {
@@ -157,7 +156,7 @@ nav {
     color: $mainRed
   }
 }
-.featured-work {
+@mixin section {
   @include wrapper-container;
   padding-top: 71px;
   .section-header {
@@ -170,33 +169,57 @@ nav {
       font-size: 13px;
     }
   }
-  .works {
-    margin-top: 20px;
-    text-align: center;
+}
+@mixin threeColumns {
+  display: inline-block;
+  width: 33%;
+}
+@mixin item($size) {
+  padding-top: 20px;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: $size;
+  color: #ffffff;
+  text-align: left;
+  span {
+    color: $envoyBlue;
   }
+}
+@mixin description {
+  padding-top: 10px;
+  color: $envoyGrey;
+  text-align: left;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+}
+.items {
+  margin-top: 20px;
+  text-align: center;
+}
+.featured-work {
+  @include section;
   .work {
-    display: inline-block;
-    width: 33%;
+    @include threeColumns;
   }
   .work-title {
-    padding-top: 20px;
-    font-family: $mainFont;
-    font-weight: bold;
-    font-size: 18px;
-    color: #ffffff;
-    text-align: left;
-    span {
-      color: $envoyBlue;
-    }
+    @include item(18px);
   }
   .work-description {
-    padding-top: 10px;
-    color: $envoyGrey;
-    text-align: left;
-    font-family: $mainFont;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 20px;
+    @include description;
+  }
+}
+.wire-section {
+  @include section;
+  .wire {
+    @include threeColumns;
+  }
+  .wire-title {
+    @include item(34px);
+  }
+  .wire-date {
+    @include description;
   }
 }
 

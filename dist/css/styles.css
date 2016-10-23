@@ -148,7 +148,6 @@ nav {
   transform: rotate(49deg); }
 
 .bottom-section {
-  height: 867px;
   background: #1D1D1D; }
 
 .paragraph {
@@ -165,6 +164,10 @@ nav {
   .paragraph span {
     color: #d90e0a; }
 
+.items {
+  margin-top: 20px;
+  text-align: center; }
+
 .featured-work {
   width: 940px;
   margin-right: auto;
@@ -178,9 +181,6 @@ nav {
     border-bottom: 2px solid #282828; }
     .featured-work .section-header a {
       font-size: 13px; }
-  .featured-work .works {
-    margin-top: 20px;
-    text-align: center; }
   .featured-work .work {
     display: inline-block;
     width: 33%; }
@@ -194,6 +194,40 @@ nav {
     .featured-work .work-title span {
       color: #67D9DA; }
   .featured-work .work-description {
+    padding-top: 10px;
+    color: #9F9F9F;
+    text-align: left;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px; }
+
+.wire-section {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 71px; }
+  .wire-section .section-header {
+    font-family: "Arial";
+    color: #9F9F9F;
+    font-size: 22px;
+    padding-bottom: 11px;
+    border-bottom: 2px solid #282828; }
+    .wire-section .section-header a {
+      font-size: 13px; }
+  .wire-section .wire {
+    display: inline-block;
+    width: 33%; }
+  .wire-section .wire-title {
+    padding-top: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 34px;
+    color: #ffffff;
+    text-align: left; }
+    .wire-section .wire-title span {
+      color: #67D9DA; }
+  .wire-section .wire-date {
     padding-top: 10px;
     color: #9F9F9F;
     text-align: left;
