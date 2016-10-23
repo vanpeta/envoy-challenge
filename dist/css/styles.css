@@ -27,6 +27,10 @@ body:before {
   font-family: Trade-Gothic-Bold;
   src: url(TradeGothic-BoldCondTwenty.otf); }
 
+a {
+  text-decoration: none;
+  color: #d90e0a; }
+
 body {
   margin: 0px !important;
   padding: 0px !important; }
@@ -37,7 +41,6 @@ nav {
   position: absolute;
   width: 100%; }
   nav .links {
-    text-decoration: none;
     color: #ffffff;
     font-size: 13px;
     font-weight: bold;
@@ -82,7 +85,7 @@ nav {
   font-size: 13px;
   font-weight: bold;
   font-family: "Arial";
-  color: #67d9da;
+  color: #67D9DA;
   line-height: 3.692;
   display: inline-block;
   position: relative;
@@ -109,7 +112,7 @@ nav {
     position: absolute;
     top: 0;
     left: 21%;
-    z-index: -1; }
+    z-index: -2; }
 
 .title {
   padding-top: 200px;
@@ -125,10 +128,76 @@ nav {
   color: #9F9F9F;
   width: 360px;
   line-height: 1.25; }
-  .subtitle a {
-    text-decoration: none;
-    color: #d90e0a; }
+
+.blood1 {
+  z-index: -1 !important;
+  left: 19% !important;
+  top: -332px !important;
+  transform: rotate(49deg); }
+
+.blood2 {
+  z-index: -1 !important;
+  left: 19% !important;
+  top: -332px !important;
+  transform: rotate(49deg); }
+
+.blood3 {
+  z-index: -1 !important;
+  left: 19% !important;
+  top: -332px !important;
+  transform: rotate(49deg); }
 
 .bottom-section {
   height: 867px;
   background: #1D1D1D; }
+
+.paragraph {
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 5px solid #282828; }
+  .paragraph span {
+    color: #d90e0a; }
+
+.featured-work {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 71px; }
+  .featured-work .section-header {
+    font-family: "Arial";
+    color: #9F9F9F;
+    font-size: 22px;
+    padding-bottom: 11px;
+    border-bottom: 2px solid #282828; }
+    .featured-work .section-header a {
+      font-size: 13px; }
+  .featured-work .works {
+    margin-top: 20px;
+    text-align: center; }
+  .featured-work .work {
+    display: inline-block;
+    width: 33%; }
+  .featured-work .work-title {
+    padding-top: 20px;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left; }
+    .featured-work .work-title span {
+      color: #67D9DA; }
+  .featured-work .work-description {
+    padding-top: 10px;
+    color: #9F9F9F;
+    text-align: left;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px; }
