@@ -23,6 +23,10 @@ body:before {
   width: 100%;
   z-index: -1; }
 
+@font-face {
+  font-family: Trade-Gothic-Bold;
+  src: url(TradeGothic-BoldCondTwenty.otf); }
+
 body {
   margin: 0px !important;
   padding: 0px !important; }
@@ -44,13 +48,6 @@ nav {
     margin-right: 20px; }
   nav img {
     height: 25px; }
-
-.featured {
-  height: 600px;
-  background-image: url "assets/ENVOY_LOGO.png"; }
-
-.section2 {
-  background: #1D1D1D; }
 
 .nav-content {
   width: 940px;
@@ -103,8 +100,7 @@ nav {
 .container {
   width: 940px;
   margin-right: auto;
-  margin-left: auto;
-  text-align: center; }
+  margin-left: auto; }
 
 .carousel {
   height: 674px;
@@ -114,6 +110,24 @@ nav {
     top: 0;
     left: 21%;
     z-index: -1; }
+
+.title {
+  padding-top: 200px;
+  width: 330px;
+  font-family: Trade-Gothic-Bold;
+  font-size: 62px;
+  color: #d90e0a;
+  line-height: 56px; }
+
+.subtitle {
+  font-family: "Arial";
+  font-size: 16px;
+  color: #9F9F9F;
+  width: 360px;
+  line-height: 1.25; }
+  .subtitle a {
+    text-decoration: none;
+    color: #d90e0a; }
 
 .bottom-section {
   height: 867px;
