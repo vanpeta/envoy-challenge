@@ -12,7 +12,7 @@
   font-weight: bold;
   font-family: "Arial"
 }
-@mixin wrapper {
+@mixin wrapper-container {
   width: 940px;
   margin-right: auto;
   margin-left: auto;
@@ -33,7 +33,7 @@ nav {
     color: #ffffff;
     @include nav-bar-font;
     @include nav-bar-valign;
-    margin-right: 25px;
+    margin-right: 20px;
   }
   img {
   height: 25px;
@@ -49,7 +49,7 @@ nav {
 }
 
 .nav-content {
-  @include wrapper;
+  @include wrapper-container;
 }
 .twitter {
   height: 40px;
@@ -90,8 +90,23 @@ nav {
   font-weight: bold;
 }
 .container {
-  @include wrapper;
+  @include wrapper-container;
   text-align: center;
+}
+.carousel {
+  height: 674px;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    z-index: -1;
+  }
+}
+
+.bottom-section {
+  height: 867px;
+  background: #1D1D1D;
 }
 
 

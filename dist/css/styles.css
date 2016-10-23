@@ -41,7 +41,7 @@ nav {
     display: inline-block;
     position: relative;
     bottom: -20px;
-    margin-right: 25px; }
+    margin-right: 20px; }
   nav img {
     height: 25px; }
 
@@ -105,3 +105,16 @@ nav {
   margin-right: auto;
   margin-left: auto;
   text-align: center; }
+
+.carousel {
+  height: 674px;
+  overflow: hidden; }
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    z-index: -1; }
+
+.bottom-section {
+  height: 867px;
+  background: #1D1D1D; }
