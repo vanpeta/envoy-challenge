@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
     <title>envoy challenge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
@@ -28,29 +29,70 @@
       </div>
     </nav>
     <div class="container">
-      <div class="carousel">
-        <div class="state1">
-        <img class="blood1" src="assets/blood.png">
-          <img class="blood2" src="assets/blood.png">
-          <img class="blood3" src="assets/blood.png">
-          <img src="assets/Background.png">
-          <div class="title">THE IPHONE UNCHAINED.</div>
-          <div class="subtitle">Tarantino’s outrageous film Djano Unchained needed an equally in your face mobile experience. Bloody good awesomeness ensued. <a href="#">View Project</a>
+      <section class="slider-controllers">
+        <div class="dots">
+          <div class="slide-dot active-slide">
+            <a id="one" class="one dot" href="#slide-1">
+              <img class="base-dot" src=assets/base-dot.png>
+            </a>
+          </div>
+          <div class="slide-dot">
+            <a id="one" class="one dot" href="#slide-2">
+              <img class="base-dot" src=assets/base-dot.png>
+            </a>
+          </div>
+          <div class="slide-dot">
+            <a id="one" class="one dot" href="#slide-3">
+              <img class="base-dot" src=assets/base-dot.png>
+            </a>
+          </div>
+          <div class="slide-dot">
+            <a id="one" class="one dot" href="#slide-4">
+              <img class="base-dot" src=assets/base-dot.png>
+            </a>
           </div>
         </div>
-        <div class="state2">
+        <div class="arrows">
+          <a id="prev" href="#">
+            <img class="base-arrow-prev" src="assets/base-arrow.png">
+          </a>
+          <a id="next" href="#">
+            <img class="base-arrow-next" src="assets/base-arrow.png">
+          </a>
         </div>
-        <div class="state3">
+      </section>
+      <section class="slider">
+        <div id="slide-1" class="slide">
+          <img src="assets/background-1.png">
+          <div class="slide-title">THE IPHONE UNCHAINED.</div>
+          <div class="slide-subtitle">Tarantino’s outrageous film Djano Unchained needed an equally in your face mobile experience. Bloody good awesomeness ensued. <a href="#">View Project</a>
+          </div>
         </div>
-        <div class="state4">
+<!--         <div id="slide-2" class="slide">
+          <img src="assets/background-2.png">
+          <div class="slide-title">SAY HELLO TO THE FUTURE OF VIZIO.</div>
+          <div class="slide-subtitle">When Vizio needed to pull the wrap off its new family of PCs they called on Envoy to conceptualize, direct and produce a series of short product films. <a href="#">View Project</a>
+          </div>
         </div>
-      </div>
+        <div id="slide-3" class="slide">
+          <img src="assets/background-3.png">
+          <div class="slide-title">HELPING EARTH'S GREATEST SECRETS BREAK OUT.</div>
+          <div class="slide-subtitle">Activate rocket boots! We created a series of out of this world mobile apps and games to introduce the hilarious animated film Escape From Planet Earth. <a href="#">View Project</a>
+          </div>
+        </div>
+        <div id="slide-4" class="slide">
+          <img src="assets/background-4.png">
+          <div class="slide-title">WORLD MEET ULTRA. ULTRA MEET WORLD.</div>
+          <div class="slide-subtitle">Asked to launch T-Mobile’s new internationally-minded brand, Ultra Mobile, we created a campaign that’s creativity knows no borders. <a href="#">View Project</a>
+          </div>
+        </div> -->
+      </section>
     </div>
     <div class="bottom-section">
-      <div class="paragraph">
+      <section class="paragraph">
       An independent full service creative agency helping brave brands build businesses and be heard in a world full of noise. <span>We are Envoy.</span>
-      </div>
-      <div class="featured-work">
+      </section>
+      <section class="featured-work">
         <div class="section-header">
           Featured Work <a href="#">View All Work</a>
         </div>
@@ -86,8 +128,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="wire-section">
+      </section>
+      <section class="wire-section">
         <div class="section-header">
           Wire <a href="#">View All Work</a>
         </div>
@@ -117,7 +159,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
   </body>
 </html>
