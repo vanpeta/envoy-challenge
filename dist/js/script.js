@@ -44,7 +44,9 @@ $('#next').on('click', function(e) {
     nextSlideDot = $('.slide-dot:first');
   }
   nextSlideDot.siblings().removeClass('active-slide');
+  nextSlideDot.siblings().children().children().attr('src', 'assets/base-dot.png');
   nextSlideDot.addClass('active-slide');
+  nextSlideDot.children().children().attr('src', 'assets/selected-dot.png');
 
 // Slides
   var currentSlide = $('.active-slide.slide');
@@ -72,8 +74,11 @@ $('#prev').on('click', function(e) {
   if (prevSlideDot.length == 0) {
     prevSlideDot = $('.slide-dot:last');
   }
+
   prevSlideDot.siblings().removeClass('active-slide');
+  prevSlideDot.siblings().children().children().attr('src', 'assets/base-dot.png');
   prevSlideDot.addClass('active-slide');
+  prevSlideDot.children().children().attr('src', 'assets/selected-dot.png');
 
 // Slides
   currentSlide = $('.active-slide.slide');
