@@ -195,6 +195,27 @@ section.slider-controllers{
 .slide2-subtitle {
   @include slideContent (6, 16px, $mainFont, 18px, $envoyGrey, 1.25, 0, 482px);
 }
+//Slide 3
+.slide3-title {
+  @include slideContent (6, 125px, Trade-Gothic-Bold, 60px, #f68f1e, 56px, 0, 0px);
+}
+.slide3-subtitle {
+  @include slideContent (6, 300px, $mainFont, 16px, #ffffff, 1.25, 0, -479px);
+  a {
+    color: #f68f1e;
+  }
+}
+//Slide 4
+.slide4-title {
+  @include slideContent (6, 134px, Trade-Gothic-Bold, 62px, #2162bc, 56px, 0, 0px);
+}
+.slide4-subtitle {
+  @include slideContent (6, 259px, $mainFont, 17px, $envoyGrey, 1.25, 0, -479px);
+  a {
+    color: #2162bc;
+  }
+}
+
 // Bottom  Section
 .bottom-section {
   background: $greyBackground;
