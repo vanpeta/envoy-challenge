@@ -9,9 +9,12 @@ $envoyBlue: #67D9DA;
 $mainFont: "Arial";
 $greyBackground: #1D1D1D;
 
+//media breakpoints queries
+$tablets: new-breakpoint(max-width 980px 12);
+$phones: new-breakpoint(max-width 500px 12);
+
 @mixin wrapper-container($background) {
   @include outer-container(940px);
-
   background-color: $background;
 }
 @mixin nav-bar-valign {
@@ -248,11 +251,24 @@ section.slider-controllers{
 }
 
 // Bottom  Section
+.work, .wire{
+  @include media($phones) {
+  @include span-columns(12);
+  }
+}
 .bottom-section {
   background: $greyBackground;
+  padding-bottom: 30px;
+}
+.bottom-container {
+  @include wrapper-container($greyBackground);
+  @include media($tablets) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 .paragraph {
-  @include wrapper-container($greyBackground);
+  @include row();
   font-family: $mainFont;
   font-weight: bold;
   font-size: 35px;
@@ -263,9 +279,11 @@ section.slider-controllers{
   span {
     color: $mainRed
   }
+  @include media($phones) {
+    font-size: 22px;
+  }
 }
 @mixin section {
-  @include wrapper-container($greyBackground);
   padding-top: 71px;
   .section-header {
     font-family: $mainFont;
@@ -300,13 +318,25 @@ section.slider-controllers{
   line-height: 20px;
 }
 .items {
+  @include row();
   margin-top: 20px;
   text-align: center;
 }
+
 .featured-work {
   @include section;
   .work {
     @include span-columns(4);
+    @include media($tablets) {
+      img {
+        width: 100%;
+      }
+    }
+    @include media($phones) {
+      @include span-columns(12);
+      margin-top: 20px;
+      float: none!important;
+    }
   }
   .work-title {
     @include item(18px);
@@ -319,12 +349,39 @@ section.slider-controllers{
   @include section;
   .wire {
     @include span-columns(4);
-  }
+    @include media($tablets) {
+      img {
+        width: 100%;
+      }
+    }
+    @include media($phones) {
+      @include span-columns(12);
+      font-size: 27px;
+      }
+    }
   .wire-title {
     @include item(34px);
+    @include media($tablets) {
+      font-size: 27px;
+    }
   }
   .wire-date {
     @include description;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
