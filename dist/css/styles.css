@@ -148,7 +148,16 @@ section.slider-controllers {
 
 .slider {
   position: absolute;
-  z-index: -1; }
+  z-index: -1;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 674px; }
+  .slider::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .base-arrow-prev {
   -webkit-transform: rotate(180deg);
@@ -157,20 +166,98 @@ section.slider-controllers {
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.slide-title {
+.slide {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  visibility: hidden;
+  position: absolute; }
+  .slide::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .slide img {
+    position: absolute;
+    width: auto; }
+
+.active-slide {
+  visibility: visible !important; }
+
+.slide-content {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 674px; }
+  .slide-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.slide1-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: relative;
   padding-top: 200px;
-  width: 330px;
   font-family: Trade-Gothic-Bold;
   font-size: 62px;
   color: #d90e0a;
-  line-height: 56px; }
+  line-height: 56px;
+  top: 0;
+  left: 0px; }
+  .slide1-title:last-child {
+    margin-right: 0; }
 
-.slide-subtitle {
+.slide1-subtitle {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: relative;
+  padding-top: 322px;
   font-family: "Arial";
   font-size: 16px;
   color: #9F9F9F;
-  width: 360px;
-  line-height: 1.25; }
+  line-height: 1.25;
+  top: 0;
+  left: -318px; }
+  .slide1-subtitle:last-child {
+    margin-right: 0; }
+
+.slide2-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: relative;
+  padding-top: 130px;
+  font-family: Trade-Gothic-Bold;
+  font-size: 62px;
+  color: #d90e0a;
+  line-height: 56px;
+  top: 0;
+  left: 0px;
+  margin-left: 51.17883%; }
+  .slide2-title:last-child {
+    margin-right: 0; }
+
+.slide2-subtitle {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: relative;
+  padding-top: 16px;
+  font-family: "Arial";
+  font-size: 18px;
+  color: #9F9F9F;
+  line-height: 1.25;
+  top: 0;
+  left: 482px; }
+  .slide2-subtitle:last-child {
+    margin-right: 0; }
 
 .bottom-section {
   background: #1D1D1D; }
