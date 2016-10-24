@@ -10,8 +10,8 @@ $mainFont: "Arial";
 $greyBackground: #1D1D1D;
 
 @mixin wrapper-container($background) {
-  @include outer-container(100%);
-  width: 940px;
+  @include outer-container(940px);
+
   background-color: $background;
 }
 @mixin nav-bar-valign {

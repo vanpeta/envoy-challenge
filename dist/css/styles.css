@@ -57,10 +57,9 @@ nav {
     height: 25px; }
 
 .nav-content {
-  max-width: 100%;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
   background-color: none; }
   .nav-content::after {
     clear: both;
@@ -359,10 +358,9 @@ section.slider-controllers {
   background: #1D1D1D; }
 
 .paragraph {
-  max-width: 100%;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
   background-color: #1D1D1D;
   font-family: "Arial";
   font-weight: bold;
@@ -383,10 +381,9 @@ section.slider-controllers {
   text-align: center; }
 
 .featured-work {
-  max-width: 100%;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
   background-color: #1D1D1D;
   padding-top: 71px; }
   .featured-work::after {
@@ -427,10 +424,9 @@ section.slider-controllers {
     line-height: 20px; }
 
 .wire-section {
-  max-width: 100%;
+  max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  width: 940px;
   background-color: #1D1D1D;
   padding-top: 71px; }
   .wire-section::after {
