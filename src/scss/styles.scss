@@ -9,6 +9,11 @@ $envoyBlue: #67D9DA;
 $mainFont: "Arial";
 $greyBackground: #1D1D1D;
 
+@mixin wrapper-container($background) {
+  @include outer-container(100%);
+  width: 940px;
+  background-color: $background;
+}
 @mixin nav-bar-valign {
   display: inline-block;
   position: relative;
@@ -18,11 +23,6 @@ $greyBackground: #1D1D1D;
   font-size: 13px;
   font-weight: bold;
   font-family: $mainFont;
-}
-@mixin wrapper-container($background) {
-  @include outer-container(100%);
-  width: 940px;
-  background-color: $background;
 }
 
 @font-face {
@@ -228,11 +228,11 @@ section.slider-controllers{
   background: $greyBackground;
 }
 .paragraph {
+  @include wrapper-container($greyBackground);
   font-family: $mainFont;
   font-weight: bold;
   font-size: 35px;
   color: #ffffff;
-  @include wrapper-container($greyBackground);
   padding-top: 50px;
   padding-bottom: 40px;
   border-bottom: 5px solid $lineColor;
@@ -254,10 +254,7 @@ section.slider-controllers{
     }
   }
 }
-@mixin threeColumns {
-  display: inline-block;
-  width: 33%;
-}
+
 @mixin item($size) {
   padding-top: 20px;
   font-family: $mainFont;
@@ -285,7 +282,7 @@ section.slider-controllers{
 .featured-work {
   @include section;
   .work {
-    @include threeColumns;
+    @include span-columns(4);
   }
   .work-title {
     @include item(18px);
@@ -297,7 +294,7 @@ section.slider-controllers{
 .wire-section {
   @include section;
   .wire {
-    @include threeColumns;
+    @include span-columns(4);
   }
   .wire-title {
     @include item(34px);

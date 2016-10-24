@@ -1,6 +1,10 @@
-# How did I create this project?
+# ENVOY Coding Challenge
 
 
+
+Envoy asked me to translate to html the following psd. 
+
+![](./dist/assets/ENVOY.png)
 
 The directions state that we must use Gulp, bourbon and neat, so the first thing is creating the right dev environment for these technologies.
 
@@ -25,7 +29,7 @@ Let's start installing the tech we will need on our local repo.
 
 ##### NPM
 
-We started by running
+We start by running on the terminal
 
 ```bash
 $ npm init
@@ -74,8 +78,78 @@ Lastly we add BrowserSync.
 $ npm install browser-sync --save-dev
 ```
 
+BrowserSync allows us to automaticlly render the html file on your browser without reloading the page.
+
+For that we need to writte the tasks to automatize the process, so we need just to design the page.
+
+Gulpfile.js will look like this:
+
+```javascript
+"use strict"
+
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var bourbon = require("node-bourbon").includePaths;
+var neat = require("node-neat").includePaths;
+var browserSync = require("browser-sync");
+
+//Compiles all gulp tasks
+gulp.task('default', ['sass']);
+
+// Live reload anytime a file changes
+gulp.task("watch", ["browserSync", "sass"], function() {
+  gulp.watch("src/scss/**/*.scss", ["sass"]);
+  gulp.watch("dist/*.html").on("change", browserSync.reload);
+});
+
+// Spin up a server
+gulp.task("browserSync", function() {
+  browserSync({
+    server: {
+      baseDir: "dist"
+    }
+  })
+});
+
+// Compile SASS files
+gulp.task("sass", function() {
+  gulp.src("src/scss/**/*.scss")
+      .pipe(sass({
+        includePaths: bourbon,
+        includePaths: neat
+      }))
+      .pipe(gulp.dest("dist/css"))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+});
+```
+
+Once we have all the libraries and frameworks installed, we need to scaffolder our project, we will make sure that the file structure is aligned with what we have defined on our gulpfile.js
+
 This is how my project is structured:
 
+![](dist/assets/file-structure.png)
+
+Lastly, don't forget to import the libraries to styles.scss:
+
+```scss
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+```
+
+Create the index.html rule and you are ready to go.
+
+The rest is just codding, y proces is:
+
+1. Define the structure of the website in html adding all the elements.
+2. Give style to the elements with SCSS, in this case using Bourbon and its grid Neat.
+3. Write the interactions with JavaScript or SCSS animations/transitions...
 
 
-Once we have all the libraries and frameworks installed, we need to scaffolder our project, we will make sure that the file structure is aligned what we have defined on our gulpfile.js
+
+If you have any questions don't hesitate in reaching out to me.
+
+## Thank you for visiting.
+

@@ -338,15 +338,15 @@ section.slider-controllers {
   background: #1D1D1D; }
 
 .paragraph {
-  font-family: "Arial";
-  font-weight: bold;
-  font-size: 35px;
-  color: #ffffff;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   width: 940px;
   background-color: #1D1D1D;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
   padding-top: 50px;
   padding-bottom: 40px;
   border-bottom: 5px solid #282828; }
@@ -381,8 +381,12 @@ section.slider-controllers {
     .featured-work .section-header a {
       font-size: 13px; }
   .featured-work .work {
-    display: inline-block;
-    width: 33%; }
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .featured-work .work:last-child {
+      margin-right: 0; }
   .featured-work .work-title {
     padding-top: 20px;
     font-family: "Arial";
@@ -421,8 +425,12 @@ section.slider-controllers {
     .wire-section .section-header a {
       font-size: 13px; }
   .wire-section .wire {
-    display: inline-block;
-    width: 33%; }
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .wire-section .wire:last-child {
+      margin-right: 0; }
   .wire-section .wire-title {
     padding-top: 20px;
     font-family: "Arial";
