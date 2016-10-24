@@ -47,7 +47,7 @@ nav {
     color: #ffffff;
     @include nav-bar-font;
     @include nav-bar-valign;
-    margin-right: 20px;
+    margin-right: 15px;
     &:hover {
         color: $envoyGrey;
       }
@@ -113,12 +113,19 @@ nav {
 section.slider-controllers{
   position: absolute;
   left: 50%;
-  bottom: 583px;
+  top: 600px;
 }
 .dots{
   position: relative;
   left: -50%;
   display: inline-block;
+}
+.dot {
+  visibility: hidden;
+  position: absolute;
+}
+.active-dot {
+  visibility: visible;
 }
 .arrows {
   position: relative;

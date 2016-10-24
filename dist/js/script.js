@@ -1,6 +1,5 @@
 console.log('loaded');
 
-
 //navbar links color code: red selected tab.
 var allLinks = $('.links');
 allLinks.on('click', function(){
@@ -8,6 +7,24 @@ allLinks.on('click', function(){
   allLinks.removeClass('activeLink');
   $(this).addClass('activeLink');
 });
+
+//slider controlers
+var dots = $('.dot');
+var arrows = $('.arrow');
+
+dots.on('mouseenter', function (e) {
+  $(this).attr('src', 'assets/hover-dot.png');
+})
+dots.on('mouseout', function (e) {
+  $(this).attr('src', 'assets/base-dot.png');
+})
+
+arrows.on('mouseenter', function (e) {
+  $(this).attr('src', 'assets/hover-arrow.png');
+})
+arrows.on('mouseout', function (e) {
+  $(this).attr('src', 'assets/base-arrow.png');
+})
 
 //slider
 var allSlides = $('.slide');
@@ -85,7 +102,7 @@ $('#one').on('click', function(e) {
   e.preventDefault();
 
 // Sub-nav
-  var currentSlideDot = $(this).closet('div');
+  var currentSlideDot = $(this).closest('div');
   currentSlideDot.siblings().removeClass('active-slide');
   currentSlideDot.addClass('active-slide');
 
@@ -105,6 +122,8 @@ $('#one').on('click', function(e) {
   }, 610);
 
 });
+
+
 
 
 
