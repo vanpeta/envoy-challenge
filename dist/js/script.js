@@ -8,6 +8,15 @@ allLinks.on('click', function(){
   $(this).addClass('activeLink');
 });
 
+//drop down menu
+$('.drop-down').on('click', function (e) {
+  console.log('dorpdown')
+  if (!$('.drop-down-menu').hasClass('active-menu')) {
+    return $('.drop-down-menu').addClass('active-menu');
+  }
+  $('.drop-down-menu').removeClass('active-menu')
+})
+
 //slider controlers
 var dots = $('.dot');
 var arrows = $('.arrow');

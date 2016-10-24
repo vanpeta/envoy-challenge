@@ -40,7 +40,38 @@ nav {
   height: 60px;
   position: absolute;
   width: 100%; }
-  nav .links {
+
+.nav-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: none; }
+  .nav-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.nav-content {
+  display: block; }
+  .nav-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nav-content .logo {
+    display: inline-block;
+    position: relative;
+    bottom: -20px;
+    margin-right: 15px; }
+    @media screen and (max-width: 690px) {
+      .nav-content .logo {
+        text-align: center;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%; }
+        .nav-content .logo:last-child {
+          margin-right: 0; } }
+  .nav-content .links {
     color: #ffffff;
     font-size: 13px;
     font-weight: bold;
@@ -49,65 +80,89 @@ nav {
     position: relative;
     bottom: -20px;
     margin-right: 15px; }
-    nav .links:hover {
-      color: #9F9F9F; }
-  nav .activeLink {
-    color: #d90e0a; }
-  nav img {
-    height: 25px; }
-
-.nav-content {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: none; }
-  .nav-content::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.twitter {
-  height: 40px;
-  width: 161px;
-  background: #565656;
-  display: inline-block;
-  position: relative;
-  bottom: -20px;
-  margin-right: -4px; }
-
-.twitter-logo {
-  margin-left: 21px;
-  height: 20px;
-  margin-right: 10px;
-  position: relative; }
-
-.redbox {
-  width: 40px;
-  height: 40px;
-  background: #e34e33;
-  display: inline-block;
-  position: relative;
-  bottom: -20px;
-  text-align: center; }
-
-.Tweet__Tweet_ {
-  font-size: 13px;
-  font-weight: bold;
-  font-family: "Arial";
-  color: #67D9DA;
-  line-height: 3.692;
-  display: inline-block;
-  position: relative;
-  bottom: 2px; }
-
-.navbar-right {
-  display: inline-block;
-  float: right; }
-
-.plus {
-  font-size: 30px;
-  color: #ffffff;
-  font-weight: bold; }
+    .nav-content .links:hover {
+      color: #d90e0a; }
+    @media screen and (max-width: 690px) {
+      .nav-content .links {
+        display: none; } }
+  .nav-content .activeLink {
+    color: #9F9F9F; }
+  .nav-content .navbar-right {
+    display: inline-block;
+    float: right; }
+    .nav-content .navbar-right img {
+      height: 25px; }
+    .nav-content .navbar-right .twitter {
+      height: 40px;
+      width: 161px;
+      background: #565656;
+      display: inline-block;
+      position: relative;
+      bottom: -20px;
+      margin-right: -4px; }
+    .nav-content .navbar-right .twitter-logo {
+      margin-left: 21px;
+      height: 20px;
+      margin-right: 10px;
+      position: relative; }
+    .nav-content .navbar-right .Tweet__Tweet_ {
+      font-size: 13px;
+      font-weight: bold;
+      font-family: "Arial";
+      color: #67D9DA;
+      line-height: 3.692;
+      display: inline-block;
+      position: relative;
+      bottom: 2px; }
+    .nav-content .navbar-right .redbox {
+      width: 40px;
+      height: 40px;
+      background: #e34e33;
+      display: inline-block;
+      position: relative;
+      bottom: -20px;
+      text-align: center; }
+      .nav-content .navbar-right .redbox .plus {
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold; }
+    @media screen and (max-width: 690px) {
+      .nav-content .navbar-right {
+        display: none; } }
+  .nav-content .drop-down {
+    display: none; }
+    @media screen and (max-width: 690px) {
+      .nav-content .drop-down {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 6.17215%;
+        display: inline-block; }
+        .nav-content .drop-down:last-child {
+          margin-right: 0; }
+        .nav-content .drop-down img {
+          padding-top: 36%;
+          padding-left: 25%;
+          width: 50px; } }
+    @media screen and (max-width: 500px) {
+      .nav-content .drop-down img {
+        padding-top: 50%; } }
+    .nav-content .drop-down .drop-down-menu {
+      display: none; }
+    .nav-content .drop-down .active-menu {
+      display: block !important;
+      position: absolute;
+      top: 60px;
+      background-color: rgba(0, 0, 0, 0.9); }
+    .nav-content .drop-down .drop-down-links {
+      display: block;
+      border-top: 2px solid #9F9F9F;
+      padding: 20px;
+      font-family: "Arial";
+      font-size: 20px;
+      color: #ffffff; }
+      .nav-content .drop-down .drop-down-links:hover {
+        color: #d90e0a; }
 
 .container {
   max-width: 1600px;
