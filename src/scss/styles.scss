@@ -167,22 +167,25 @@ section.slider-controllers{
   overflow: hidden;
   visibility: hidden;
   z-index: 0;
-
+@mixin slideImage {
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+}
   &.slide-1 {
     background-image: url("../assets/background-1.png");
-    background-repeat: no-repeat;
+    @include slideImage;
   }
   &.slide-2 {
     background-image: url("../assets/background-2.png");
-    background-repeat: no-repeat;
+    @include slideImage;
   }
   &.slide-3 {
     background-image: url("../assets/background-3.png");
-    background-repeat: no-repeat;
+    @include slideImage;
   }
   &.slide-4 {
     background-image: url("../assets/background-4.png");
-    background-repeat: no-repeat;
+    @include slideImage;
   }
   &.active-slide {
     visibility: visible;

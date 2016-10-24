@@ -189,16 +189,20 @@ section.slider-controllers {
     display: table; }
   .slide.slide-1 {
     background-image: url("../assets/background-1.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
   .slide.slide-2 {
     background-image: url("../assets/background-2.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
   .slide.slide-3 {
     background-image: url("../assets/background-3.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
   .slide.slide-4 {
     background-image: url("../assets/background-4.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
   .slide.active-slide {
     visibility: visible;
     -webkit-transform: translateX(0);
