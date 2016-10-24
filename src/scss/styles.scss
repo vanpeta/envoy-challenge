@@ -127,6 +127,7 @@ section.slider-controllers{
 .active-dot {
   visibility: visible;
 }
+
 .arrows {
   position: relative;
   display: inline-block;
@@ -135,6 +136,13 @@ section.slider-controllers{
   a {
     display: inline-block;
   }
+}
+.base-arrow-prev {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .slide-dot{
   display: inline-block;
@@ -151,73 +159,86 @@ section.slider-controllers{
   width: 100%;
   height: 674px;
 }
-.base-arrow-prev {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
 .slide {
   @include outer-container(1600px);
   width: 100%;
-  visibility: hidden;
+  height: 100%;
   position: absolute;
-  img {
-    position: absolute;
-    width: auto;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 0;
+
+  &.slide-1 {
+    background-image: url("../assets/background-1.png");
+    background-repeat: no-repeat;
+  }
+  &.slide-2 {
+    background-image: url("../assets/background-2.png");
+    background-repeat: no-repeat;
+  }
+  &.slide-3 {
+    background-image: url("../assets/background-3.png");
+    background-repeat: no-repeat;
+  }
+  &.slide-4 {
+    background-image: url("../assets/background-4.png");
+    background-repeat: no-repeat;
+  }
+  &.active-slide {
+    visibility: visible;
+    @include transform(translateX(0));
+    z-index: 3;
   }
 }
-.active-slide {
-  visibility: visible !important;
-}
-
-.slide-content{
-  @include outer-container(940px);
-  height: 674px;
-}
-@mixin slideContent ($spanColumns, $paddingTop, $fontFamily, $fontSize, $color, $lineHeight, $top, $left) {
+@mixin slideContent ($spanColumns, $shif, $paddingTop, $fontFamily, $fontSize, $color, $lineHeight) {
   @include span-columns($spanColumns);
-  position: relative;
+  @include shift($shif);
   padding-top: $paddingTop;
+  position: relative;
   font-family: $fontFamily;
   font-size: $fontSize;
   color: $color;
   line-height: $lineHeight;
-  top: $top;
-  left: $left;
+}
+.text-content {
+  @include outer-container(940px)
+}
+.row {
+  @include row();
 }
 //Slide 1
 .slide1-title {
-  @include slideContent (4, 200px, Trade-Gothic-Bold, 62px, $mainRed, 56px, 0, 0px);
+  @include slideContent (4, 0, 21%, Trade-Gothic-Bold, 54px, $mainRed, 56px);
 }
 .slide1-subtitle{
-  @include slideContent (4, 322px, $mainFont, 16px, $envoyGrey, 1.25, 0, -318px);
+  @include slideContent (5, 0, 10px, $mainFont, 16px, $envoyGrey, 1.25);
+  padding-right: 10px;
 }
 //Slide 2
 .slide2-title {
-  @include slideContent (6, 130px, Trade-Gothic-Bold, 62px, $mainRed, 56px, 0, 0px);
+  @include slideContent (6, 6, 15%, Trade-Gothic-Bold, 62px, $mainRed, 56px);
   @include shift(6)
 }
 .slide2-subtitle {
-  @include slideContent (6, 16px, $mainFont, 18px, $envoyGrey, 1.25, 0, 482px);
+  @include slideContent (6, 6, 10px, $mainFont, 18px, $envoyGrey, 1.25);
 }
 //Slide 3
 .slide3-title {
-  @include slideContent (6, 125px, Trade-Gothic-Bold, 60px, #f68f1e, 56px, 0, 0px);
+  @include slideContent (6, 0, 15%, Trade-Gothic-Bold, 59px, #f68f1e, 56px);
 }
 .slide3-subtitle {
-  @include slideContent (6, 300px, $mainFont, 16px, #ffffff, 1.25, 0, -479px);
+  @include slideContent (6, 0, 10px, $mainFont, 16px, #ffffff, 1.25);
+  padding-right: 26px;
   a {
     color: #f68f1e;
   }
 }
 //Slide 4
 .slide4-title {
-  @include slideContent (6, 134px, Trade-Gothic-Bold, 62px, #2162bc, 56px, 0, 0px);
+  @include slideContent (6, 0, 15%, Trade-Gothic-Bold, 60px, #2162bc, 56px);
 }
 .slide4-subtitle {
-  @include slideContent (6, 259px, $mainFont, 17px, $envoyGrey, 1.25, 0, -479px);
+  @include slideContent (5, 0, 10px, $mainFont, 15px, $envoyGrey, 1.4);
   a {
     color: #2162bc;
   }
