@@ -65,7 +65,7 @@ nav {
     margin-right: 15px;
     @include media($smallTablets) {
       text-align: center;
-      @include span-columns(10);
+      @include span-columns(8);
     }
   }
   .links {
@@ -129,7 +129,7 @@ nav {
   .drop-down {
     display: none;
     @include media($smallTablets) {
-      @include span-columns(1)
+      @include span-columns(2)
       display: inline-block;
       img {
         padding-top: 36%;
@@ -139,18 +139,20 @@ nav {
     }
     @include media($phones) {
       img {
-        padding-top: 50%;
+        padding-top: 29%;
       }
     }
     .drop-down-menu {
       display: none;
       z-index: 3;
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      width: 80%;
+      background-color: rgba(0,0,0,0.9);
       }
     .active-menu {
       display: block!important;
-      position: absolute;
-      top: 60px;
-      background-color: rgba(0,0,0,0.9);
     }
     .drop-down-links {
       display: block;
@@ -486,19 +488,3 @@ section.slider-controllers{
     @include description;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -134,8 +134,8 @@ $('#one').on('click', function(e) {
   setTimeout(function() {
       currentSlide.removeClass('recent-slide');
   }, 610);
-
 });
+
 
 
 

@@ -53,7 +53,7 @@ nav {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 82.94039%; }
+        width: 65.88078%; }
         .nav-content .logo:last-child {
           margin-right: 0; } }
   .nav-content .links {
@@ -121,7 +121,7 @@ nav {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 6.17215%;
+        width: 14.70196%;
         display: inline-block; }
         .nav-content .drop-down:last-child {
           margin-right: 0; }
@@ -131,15 +131,17 @@ nav {
           width: 50px; } }
     @media screen and (max-width: 500px) {
       .nav-content .drop-down img {
-        padding-top: 50%; } }
+        padding-top: 29%; } }
     .nav-content .drop-down .drop-down-menu {
       display: none;
-      z-index: 3; }
-    .nav-content .drop-down .active-menu {
-      display: block !important;
+      z-index: 3;
       position: absolute;
       top: 60px;
+      left: 0px;
+      width: 80%;
       background-color: rgba(0, 0, 0, 0.9); }
+    .nav-content .drop-down .active-menu {
+      display: block !important; }
     .nav-content .drop-down .drop-down-links {
       display: block;
       border-top: 2px solid #9F9F9F;
