@@ -4,25 +4,6 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
-  background-image: -ms-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #d5eefb 0, #d5eefb 6.17215%, transparent 6.17215%, transparent 8.5298%, #d5eefb 8.5298%, #d5eefb 14.70196%, transparent 14.70196%, transparent 17.05961%, #d5eefb 17.05961%, #d5eefb 23.23176%, transparent 23.23176%, transparent 25.58941%, #d5eefb 25.58941%, #d5eefb 31.76157%, transparent 31.76157%, transparent 34.11922%, #d5eefb 34.11922%, #d5eefb 40.29137%, transparent 40.29137%, transparent 42.64902%, #d5eefb 42.64902%, #d5eefb 48.82117%, transparent 48.82117%, transparent 51.17883%, #d5eefb 51.17883%, #d5eefb 57.35098%, transparent 57.35098%, transparent 59.70863%, #d5eefb 59.70863%, #d5eefb 65.88078%, transparent 65.88078%, transparent 68.23843%, #d5eefb 68.23843%, #d5eefb 74.41059%, transparent 74.41059%, transparent 76.76824%, #d5eefb 76.76824%, #d5eefb 82.94039%, transparent 82.94039%, transparent 85.29804%, #d5eefb 85.29804%, #d5eefb 91.4702%, transparent 91.4702%, transparent 93.82785%, #d5eefb 93.82785%, #d5eefb 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
 @font-face {
   font-family: Trade-Gothic-Bold;
   src: url(TradeGothic-BoldCondTwenty.otf); }
@@ -57,12 +38,16 @@ nav {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 980px) {
+    .nav-content {
+      margin-right: 15px;
+      margin-left: 15px; } }
   .nav-content .logo {
     display: inline-block;
     position: relative;
     bottom: -20px;
     margin-right: 15px; }
-    @media screen and (max-width: 690px) {
+    @media screen and (max-width: 710px) {
       .nav-content .logo {
         text-align: center;
         float: left;
@@ -82,7 +67,7 @@ nav {
     margin-right: 15px; }
     .nav-content .links:hover {
       color: #d90e0a; }
-    @media screen and (max-width: 690px) {
+    @media screen and (max-width: 710px) {
       .nav-content .links {
         display: none; } }
   .nav-content .activeLink {
@@ -126,12 +111,12 @@ nav {
         font-size: 30px;
         color: #ffffff;
         font-weight: bold; }
-    @media screen and (max-width: 690px) {
+    @media screen and (max-width: 710px) {
       .nav-content .navbar-right {
         display: none; } }
   .nav-content .drop-down {
     display: none; }
-    @media screen and (max-width: 690px) {
+    @media screen and (max-width: 710px) {
       .nav-content .drop-down {
         float: left;
         display: block;
@@ -148,7 +133,8 @@ nav {
       .nav-content .drop-down img {
         padding-top: 50%; } }
     .nav-content .drop-down .drop-down-menu {
-      display: none; }
+      display: none;
+      z-index: 3; }
     .nav-content .drop-down .active-menu {
       display: block !important;
       position: absolute;
@@ -174,16 +160,69 @@ nav {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (margin-right: 1500px) {
+    .container {
+      height: 430px; } }
+  @media screen and (max-width: 710px) {
+    .container {
+      height: 310px; } }
 
 section.slider-controllers {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 34.11922%;
+  display: block;
   position: absolute;
-  left: 50%;
-  top: 600px; }
+  top: 624px; }
+  section.slider-controllers:last-child {
+    margin-right: 0; }
+  section.slider-controllers::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 2050px) {
+    section.slider-controllers {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-left: 42.64902%; }
+      section.slider-controllers:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 980px) {
+    section.slider-controllers {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-left: 51.17883%; }
+      section.slider-controllers:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 710px) {
+    section.slider-controllers {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 42.64902%;
+      top: 310px; }
+      section.slider-controllers:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    section.slider-controllers {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 25.58941%; }
+      section.slider-controllers:last-child {
+        margin-right: 0; } }
 
 .dots {
-  position: relative;
-  left: -50%;
-  display: inline-block; }
+  display: inline-block;
+  padding-top: 10px; }
 
 .dot {
   visibility: hidden;
@@ -193,10 +232,8 @@ section.slider-controllers {
   visibility: visible; }
 
 .arrows {
-  position: relative;
   display: inline-block;
-  right: -94%;
-  top: 9px; }
+  float: right; }
   .arrows a {
     display: inline-block; }
 
@@ -245,18 +282,50 @@ section.slider-controllers {
     background-image: url("../assets/background-1.png");
     background-repeat: no-repeat;
     background-position: 50% 50%; }
+    @media screen and (max-width: 710px) {
+      .slide.slide-1 {
+        background-size: 160%;
+        background-position: 50% 0%; } }
+    @media screen and (max-width: 500px) {
+      .slide.slide-1 {
+        background-size: 230%;
+        background-position: 50% 0%; } }
   .slide.slide-2 {
     background-image: url("../assets/background-2.png");
     background-repeat: no-repeat;
     background-position: 50% 50%; }
+    @media screen and (max-width: 710px) {
+      .slide.slide-2 {
+        background-size: 160%;
+        background-position: 50% 0%; } }
+    @media screen and (max-width: 500px) {
+      .slide.slide-2 {
+        background-size: 230%;
+        background-position: 50% 0%; } }
   .slide.slide-3 {
     background-image: url("../assets/background-3.png");
     background-repeat: no-repeat;
     background-position: 50% 50%; }
+    @media screen and (max-width: 710px) {
+      .slide.slide-3 {
+        background-size: 160%;
+        background-position: 50% 0%; } }
+    @media screen and (max-width: 500px) {
+      .slide.slide-3 {
+        background-size: 230%;
+        background-position: 50% 0%; } }
   .slide.slide-4 {
     background-image: url("../assets/background-4.png");
     background-repeat: no-repeat;
     background-position: 50% 50%; }
+    @media screen and (max-width: 710px) {
+      .slide.slide-4 {
+        background-size: 160%;
+        background-position: 50% 0%; } }
+    @media screen and (max-width: 500px) {
+      .slide.slide-4 {
+        background-size: 230%;
+        background-position: 50% 0%; } }
   .slide.active-slide {
     visibility: visible;
     -webkit-transform: translateX(0);
@@ -296,6 +365,21 @@ section.slider-controllers {
   line-height: 56px; }
   .slide1-title:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide1-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 0%;
+      padding-top: 22%;
+      position: relative;
+      font-family: Trade-Gothic-Bold;
+      font-size: 30px;
+      color: #d90e0a;
+      line-height: 30px; }
+      .slide1-title:last-child {
+        margin-right: 0; } }
 
 .slide1-subtitle {
   float: left;
@@ -312,6 +396,9 @@ section.slider-controllers {
   padding-right: 10px; }
   .slide1-subtitle:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide1-subtitle {
+      display: none; } }
 
 .slide2-title {
   float: left;
@@ -328,6 +415,21 @@ section.slider-controllers {
   margin-left: 51.17883%; }
   .slide2-title:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide2-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 51.17883%;
+      padding-top: 75px;
+      position: relative;
+      font-family: Trade-Gothic-Bold;
+      font-size: 30px;
+      color: #d90e0a;
+      line-height: 30px; }
+      .slide2-title:last-child {
+        margin-right: 0; } }
 
 .slide2-subtitle {
   float: left;
@@ -343,6 +445,9 @@ section.slider-controllers {
   line-height: 1.25; }
   .slide2-subtitle:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide2-subtitle {
+      display: none; } }
 
 .slide3-title {
   float: left;
@@ -358,6 +463,21 @@ section.slider-controllers {
   line-height: 56px; }
   .slide3-title:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide3-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 0%;
+      padding-top: 100px;
+      position: relative;
+      font-family: Trade-Gothic-Bold;
+      font-size: 25px;
+      color: #f68f1e;
+      line-height: 30px; }
+      .slide3-title:last-child {
+        margin-right: 0; } }
 
 .slide3-subtitle {
   float: left;
@@ -376,6 +496,9 @@ section.slider-controllers {
     margin-right: 0; }
   .slide3-subtitle a {
     color: #f68f1e; }
+  @media screen and (max-width: 710px) {
+    .slide3-subtitle {
+      display: none; } }
 
 .slide4-title {
   float: left;
@@ -391,6 +514,21 @@ section.slider-controllers {
   line-height: 56px; }
   .slide4-title:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 710px) {
+    .slide4-title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 0%;
+      padding-top: 28%;
+      position: relative;
+      font-family: Trade-Gothic-Bold;
+      font-size: 25px;
+      color: #2162bc;
+      line-height: 30px; }
+      .slide4-title:last-child {
+        margin-right: 0; } }
 
 .slide4-subtitle {
   float: left;
@@ -408,6 +546,9 @@ section.slider-controllers {
     margin-right: 0; }
   .slide4-subtitle a {
     color: #2162bc; }
+  @media screen and (max-width: 710px) {
+    .slide4-subtitle {
+      display: none; } }
 
 @media screen and (max-width: 500px) {
   .work, .wire {

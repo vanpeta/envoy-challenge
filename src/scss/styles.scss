@@ -10,8 +10,10 @@ $mainFont: "Arial";
 $greyBackground: #1D1D1D;
 
 //media breakpoints queries
+$bigScreen: new-breakpoint(max-width 2050px 12);
+$screen: new-breakpoint(margin-right 1500px 12);
 $tablets: new-breakpoint(max-width 980px 12);
-$smallTablets: new-breakpoint(max-width 690px 12);
+$smallTablets: new-breakpoint(max-width 710px 12);
 $phones: new-breakpoint(max-width 500px 12);
 
 @mixin wrapper-container($background) {
@@ -54,6 +56,10 @@ nav {
 
 .nav-content {
   @include row();
+  @include media($tablets) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
   .logo {
     @include nav-bar-valign;
     margin-right: 15px;
@@ -138,6 +144,7 @@ nav {
     }
     .drop-down-menu {
       display: none;
+      z-index: 3;
       }
     .active-menu {
       display: block!important;
@@ -158,25 +165,47 @@ nav {
     }
   }
 }
-
-
 //slider
 .container {
   @include outer-container(1600px);
   overflow: hidden;
   height: 674px;
+  @include media($screen) {
+    height: 430px
+}
+  @include media($smallTablets) {
+    height: 310px;
+  }
 }
 
 // slider controlers
 section.slider-controllers{
+  @include span-columns(2);
+  @include shift(4);
+  @include row();
   position: absolute;
-  left: 50%;
-  top: 600px;
+  top: 624px;
+  @include media($bigScreen) {
+    @include span-columns(3);
+    @include shift(5);
+  }
+  @include media($tablets) {
+    @include span-columns(3);
+    @include shift(6);
+  }
+  @include media($smallTablets) {
+    @include span-columns(4);
+    @include shift(5);
+    top: 310px;
+  }
+  @include media ($phones) {
+    @include span-columns(7);
+    @include shift(3);
+  }
 }
 .dots{
-  position: relative;
-  left: -50%;
   display: inline-block;
+  padding-top: 10px;
 }
 .dot {
   visibility: hidden;
@@ -187,10 +216,8 @@ section.slider-controllers{
 }
 
 .arrows {
-  position: relative;
   display: inline-block;
-  right: -94%;
-  top: 9px;
+  float: right;
   a {
     display: inline-block;
   }
@@ -228,6 +255,14 @@ section.slider-controllers{
   @mixin slideImage {
     background-repeat: no-repeat;
     background-position:50% 50%;
+    @include media($smallTablets) {
+      background-size: 160%;
+      background-position: 50% 0%;
+    }
+    @include media($phones) {
+      background-size: 230%;
+      background-position: 50% 0%;
+    }
   }
   &.slide-1 {
     background-image: url("../assets/background-1.png");
@@ -236,14 +271,17 @@ section.slider-controllers{
   &.slide-2 {
     background-image: url("../assets/background-2.png");
     @include slideImage;
+
   }
   &.slide-3 {
     background-image: url("../assets/background-3.png");
     @include slideImage;
+
   }
   &.slide-4 {
     background-image: url("../assets/background-4.png");
     @include slideImage;
+
   }
   &.active-slide {
     visibility: visible;
@@ -270,22 +308,37 @@ section.slider-controllers{
 //Slide 1
 .slide1-title {
   @include slideContent (4, 0, 21%, Trade-Gothic-Bold, 54px, $mainRed, 56px);
+  @include media($smallTablets) {
+    @include slideContent (6, 0, 22%, Trade-Gothic-Bold, 30px, $mainRed, 30px);
+  }
 }
 .slide1-subtitle{
   @include slideContent (5, 0, 10px, $mainFont, 16px, $envoyGrey, 1.25);
   padding-right: 10px;
+  @include media($smallTablets) {
+    display: none;
+  }
 }
 //Slide 2
 .slide2-title {
   @include slideContent (6, 6, 15%, Trade-Gothic-Bold, 62px, $mainRed, 56px);
   @include shift(6)
+  @include media($smallTablets) {
+    @include slideContent (6, 6, 75px, Trade-Gothic-Bold, 30px, $mainRed, 30px);
+  }
 }
 .slide2-subtitle {
   @include slideContent (6, 6, 10px, $mainFont, 18px, $envoyGrey, 1.25);
+  @include media($smallTablets) {
+  display: none;
+  }
 }
 //Slide 3
 .slide3-title {
   @include slideContent (6, 0, 15%, Trade-Gothic-Bold, 59px, #f68f1e, 56px);
+  @include media($smallTablets) {
+    @include slideContent (7, 0, 100px, Trade-Gothic-Bold, 25px, #f68f1e, 30px);
+  }
 }
 .slide3-subtitle {
   @include slideContent (6, 0, 10px, $mainFont, 16px, #ffffff, 1.25);
@@ -293,15 +346,24 @@ section.slider-controllers{
   a {
     color: #f68f1e;
   }
+  @include media($smallTablets) {
+    display: none;
+  }
 }
 //Slide 4
 .slide4-title {
   @include slideContent (6, 0, 15%, Trade-Gothic-Bold, 60px, #2162bc, 56px);
+  @include media($smallTablets) {
+    @include slideContent (7, 0, 28%, Trade-Gothic-Bold, 25px, #2162bc, 30px);
+  }
 }
 .slide4-subtitle {
   @include slideContent (5, 0, 10px, $mainFont, 15px, $envoyGrey, 1.4);
   a {
     color: #2162bc;
+  }
+  @include media($smallTablets) {
+    display: none;
   }
 }
 
