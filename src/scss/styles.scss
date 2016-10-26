@@ -177,6 +177,12 @@ nav {
             border-radius: 5px;
           }
         }
+        li:last-child {
+          border-bottom-color: $mainRed;
+          &:hover {
+            border-bottom-color: darken($mainRed, 10%);
+          }
+        }
       }
     }
   }

@@ -155,6 +155,10 @@ nav {
             font-weight: bold;
             background-color: #ffffff;
             border-radius: 5px; }
+        .nav-content .navbar-right .activetweetsbox #tweets li:last-child {
+          border-bottom-color: #d90e0a; }
+          .nav-content .navbar-right .activetweetsbox #tweets li:last-child:hover {
+            border-bottom-color: #a80b08; }
 
 .drop-down {
   display: none; }
