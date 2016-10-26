@@ -2,6 +2,7 @@
 @import "grid-settings";
 @import "neat";
 
+
 $mainRed: #d90e0a;
 $envoyGrey: #9F9F9F;
 $lineColor: #282828;
@@ -83,87 +84,129 @@ nav {
   .activeLink {
     color: $envoyGrey;
   }
-  .navbar-right {
-    display: inline-block;
-    float: right;
-    img {
-      height: 25px;
-    }
-    .twitter {
-      height: 40px;
-      width: 161px;
-      background: #565656;
-      @include nav-bar-valign;
-      margin-right: -4px;
-    }
-    .twitter-logo {
-      margin-left: 21px;
-      height: 20px;
-      margin-right: 10px;
-      position: relative;
-    }
-    .Tweet__Tweet_ {
-      @include nav-bar-font;
-      color: $envoyBlue;
-      line-height: 3.692;
-      display: inline-block;
-      position: relative;
-      bottom: 2px;
-    }
-    .redbox {
-      width: 40px;
-      height: 40px;
-      background: #e34e33;
-      @include nav-bar-valign;
-      text-align: center;
-      .plus {
-        font-size: 30px;
-        color: #ffffff;
-        font-weight: bold;
-      }
-    }
-    @include media($smallTablets) {
-      display: none;
+.navbar-right {
+  @include media($smallTablets) {
+    display: none;
+  }
+  display: inline-block;
+  float: right;
+  img {
+    height: 25px;
+  }
+  .twitter {
+    height: 40px;
+    width: 161px;
+    background: #565656;
+    @include nav-bar-valign;
+    margin-right: -4px;
+    a {
+      display: block;
     }
   }
-  .drop-down {
-    display: none;
-    @include media($smallTablets) {
-      @include span-columns(2)
-      display: inline-block;
-      img {
-        padding-top: 36%;
-        padding-left: 25%;
-        width: 50px;
-      }
-    }
-    @include media($phones) {
-      img {
-        padding-top: 29%;
-      }
-    }
-    .drop-down-menu {
+  .twitter-logo {
+    margin-left: 21px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+  }
+  .Tweet__Tweet_ {
+    @include nav-bar-font;
+    color: $envoyBlue;
+    line-height: 3.692;
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+  }
+  .redbox {
+    width: 40px;
+    height: 40px;
+    background: #e34e33;
+    @include nav-bar-valign;
+    text-align: center;
+    .minus {
       display: none;
-      z-index: 3;
-      position: absolute;
-      top: 60px;
-      left: 0px;
-      width: 80%;
-      background-color: rgba(0,0,0,0.9);
-      }
-    .active-menu {
-      display: block!important;
     }
-    .drop-down-links {
-      display: block;
-      border-top: 2px solid $envoyGrey;
-      padding: 20px;
-      font-family: $mainFont;
-      font-size: 20px;
+    .tweets {
+      display: none;
+    }
+    .plus, .minus {
+      font-size: 30px;
       color: #ffffff;
-      &:hover {
-        color: $mainRed;
+      font-weight: bold;
+    }
+  }
+  #tweets {
+    display: none;
+  }
+  .activetweetsbox {
+    background: $mainRed;
+      .plus {
+        display: none;
       }
+      .minus {
+        display: inline;
+      }
+      #tweets {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 0px;
+        z-index: 4;
+        li {
+          list-style-type: none;
+          background-color: $mainRed;
+          color: #ffffff;
+          font-family: $mainFont;
+          font-size: 13px;
+          border-bottom: 1px solid #ffffff;
+          text-align: left;
+          padding: 10px 10px 0 10px;
+          a {
+            color: #ffffff;
+          }
+          &:hover {
+            background-color: darken($mainRed, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+.drop-down {
+  display: none;
+  @include media($smallTablets) {
+    @include span-columns(1)
+    display: inline-block;
+    img {
+      padding-top: 36%;
+      padding-left: 25%;
+      width: 50px;
+    }
+  }
+  @include media($phones) {
+    img {
+      padding-top: 50%;
+    }
+  }
+  .drop-down-menu {
+    display: none;
+    z-index: 3;
+    }
+  .active-menu {
+    display: block!important;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(0,0,0,0.9);
+  }
+  .drop-down-links {
+    display: block;
+    border-top: 2px solid $envoyGrey;
+    padding: 20px;
+    font-family: $mainFont;
+    font-size: 20px;
+    color: #ffffff;
+    &:hover {
+      color: $mainRed;
     }
   }
 }

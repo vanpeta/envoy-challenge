@@ -75,6 +75,9 @@ nav {
   .nav-content .navbar-right {
     display: inline-block;
     float: right; }
+    @media screen and (max-width: 710px) {
+      .nav-content .navbar-right {
+        display: none; } }
     .nav-content .navbar-right img {
       height: 25px; }
     .nav-content .navbar-right .twitter {
@@ -85,6 +88,8 @@ nav {
       position: relative;
       bottom: -20px;
       margin-right: -4px; }
+      .nav-content .navbar-right .twitter a {
+        display: block; }
     .nav-content .navbar-right .twitter-logo {
       margin-left: 21px;
       height: 20px;
@@ -107,50 +112,77 @@ nav {
       position: relative;
       bottom: -20px;
       text-align: center; }
-      .nav-content .navbar-right .redbox .plus {
+      .nav-content .navbar-right .redbox .minus {
+        display: none; }
+      .nav-content .navbar-right .redbox .tweets {
+        display: none; }
+      .nav-content .navbar-right .redbox .plus, .nav-content .navbar-right .redbox .minus {
         font-size: 30px;
         color: #ffffff;
         font-weight: bold; }
-    @media screen and (max-width: 710px) {
-      .nav-content .navbar-right {
-        display: none; } }
-  .nav-content .drop-down {
-    display: none; }
-    @media screen and (max-width: 710px) {
-      .nav-content .drop-down {
-        float: left;
+    .nav-content .navbar-right #tweets {
+      display: none; }
+    .nav-content .navbar-right .activetweetsbox {
+      background: #d90e0a; }
+      .nav-content .navbar-right .activetweetsbox .plus {
+        display: none; }
+      .nav-content .navbar-right .activetweetsbox .minus {
+        display: inline; }
+      .nav-content .navbar-right .activetweetsbox #tweets {
         display: block;
-        margin-right: 2.35765%;
-        width: 14.70196%;
-        display: inline-block; }
-        .nav-content .drop-down:last-child {
-          margin-right: 0; }
-        .nav-content .drop-down img {
-          padding-top: 36%;
-          padding-left: 25%;
-          width: 50px; } }
-    @media screen and (max-width: 500px) {
-      .nav-content .drop-down img {
-        padding-top: 29%; } }
-    .nav-content .drop-down .drop-down-menu {
-      display: none;
-      z-index: 3;
-      position: absolute;
-      top: 60px;
-      left: 0px;
-      width: 80%;
-      background-color: rgba(0, 0, 0, 0.9); }
-    .nav-content .drop-down .active-menu {
-      display: block !important; }
-    .nav-content .drop-down .drop-down-links {
+        position: absolute;
+        top: 24px;
+        right: 0px;
+        z-index: 4; }
+        .nav-content .navbar-right .activetweetsbox #tweets li {
+          list-style-type: none;
+          background-color: #d90e0a;
+          color: #ffffff;
+          font-family: "Arial";
+          font-size: 13px;
+          border-bottom: 1px solid #ffffff;
+          text-align: left;
+          padding: 10px 10px 0 10px; }
+          .nav-content .navbar-right .activetweetsbox #tweets li a {
+            color: #ffffff; }
+          .nav-content .navbar-right .activetweetsbox #tweets li:hover {
+            background-color: #a80b08; }
+
+.drop-down {
+  display: none; }
+  @media screen and (max-width: 710px) {
+    .drop-down {
+      float: left;
       display: block;
-      border-top: 2px solid #9F9F9F;
-      padding: 20px;
-      font-family: "Arial";
-      font-size: 20px;
-      color: #ffffff; }
-      .nav-content .drop-down .drop-down-links:hover {
-        color: #d90e0a; }
+      margin-right: 2.35765%;
+      width: 6.17215%;
+      display: inline-block; }
+      .drop-down:last-child {
+        margin-right: 0; }
+      .drop-down img {
+        padding-top: 36%;
+        padding-left: 25%;
+        width: 50px; } }
+  @media screen and (max-width: 500px) {
+    .drop-down img {
+      padding-top: 50%; } }
+  .drop-down .drop-down-menu {
+    display: none;
+    z-index: 3; }
+  .drop-down .active-menu {
+    display: block !important;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .drop-down .drop-down-links {
+    display: block;
+    border-top: 2px solid #9F9F9F;
+    padding: 20px;
+    font-family: "Arial";
+    font-size: 20px;
+    color: #ffffff; }
+    .drop-down .drop-down-links:hover {
+      color: #d90e0a; }
 
 .container {
   max-width: 1600px;
